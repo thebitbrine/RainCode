@@ -55,7 +55,7 @@ namespace RainCode
                     {
                         WriteImage(InputPath, DestinationPath);
                     }
-                    catch (Exception ex) { Console.WriteLine("ERROR: " + ex.Message); }
+                    catch (Exception ex) { Console.WriteLine("ERROR: " + ex.Message);  Console.ReadKey(); }
                 }
                 if (Input.Key == ConsoleKey.R)
                 {
@@ -70,7 +70,7 @@ namespace RainCode
                         System.IO.File.WriteAllBytes(DestinationPath, Data);
                         Console.WriteLine("Done.");
                     }
-                    catch (Exception ex) { Console.WriteLine("ERROR: " + ex.Message); }
+                    catch (Exception ex) { Console.WriteLine("ERROR: " + ex.Message); Console.ReadKey(); }
                 }
                 Console.Clear();
             }
